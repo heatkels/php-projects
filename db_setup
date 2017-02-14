@@ -1,0 +1,29 @@
+
+CREATE DATABASE IF NOT EXISTS ipg_db;
+
+USE ipg_db;
+
+CREATE TABLE ipg_table
+(
+name CHAR(30),
+email VARCHAR(255) PRIMARY KEY,
+photo VARCHAR(255),
+date DATETIME
+);
+
+//fixed access of root@localhost
+1. create user in phpmyadmin
+
+2.GRANT ALL PRIVILEGES ON database_name.*
+TO 'username'@'servername'
+IDENTIFIED BY 'password';
+
+					$myfile = fopen("log_file.log", "w");
+					fwrite($myfile ,print_r($result,true));
+					fwrite($myfile ,PHP_EOL);
+					fclose($myfile);
+
+
+
+					$query = 'SELECT * FROM ipg_table';
+					$result = mysqli_query($dbc, $query);
